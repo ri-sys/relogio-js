@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <style>
+    @keyframes glowing {
+      0% {
+        text-shadow: 0 0 5px #64CCC5;
+      }
+      50% {
+        text-shadow: 0 0 20px #DAFFFB;
+      }
+      100% {
+        text-shadow: 0 0 5px #64CCC5;
+      }
+    }
+
+    .glow-text {
+      font-size: 36px;
+      animation: glowing 1.5s infinite;
+    }
+  </style>
+  </head>
+  <body>
+    <h1 class="glow-text"><span id="Horas"></span>h:<span id="minutos"></span>m:<span id="segundos"></span>s</h1>
+   
+    <script src="src/script.js"></script>
+  </body>
+</html>
